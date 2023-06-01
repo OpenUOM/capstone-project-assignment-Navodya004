@@ -151,7 +151,7 @@ const updateStudent = async (name, age, hometown, id) => {
 }
 
 const deleteStudent = async (id) => {
-    const sql = 'DELETE FROM student WHERE id = ?'
+    const sql = 'DELETE FROM studen WHERE id = ?'
     return new Promise((resolve, reject) => {
         knex_db
             .raw(sql, [id])
